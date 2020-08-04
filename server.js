@@ -2,6 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
+let MONGODB_URI = process.env.MONGODB_URI || "heroku_xzzcp857"
 
 const PORT = 9000;
 
@@ -15,10 +16,12 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+mongoose.connect(MONGODB_URI)
+
+// mongoose.connect("mongodb://localhost/budget", {
+//   useNewUrlParser: true,
+//   useFindAndModify: false
+// });
 
 // routes
 app.use(require("./routes/api.js"));
