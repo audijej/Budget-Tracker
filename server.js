@@ -2,7 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
-let MONGODB_URI = "mongodb://heroku_xzzcp857:2u7kisgk6b1l0hsk78rr7f9f49@ds037758.mlab.com:37758/heroku_xzzcp857"
+let MONGODB_URI = "mongodb://audijej:Silvia13!@ds037758.mlab.com:37758/heroku_xzzcp857"
 
 const PORT = 9000;
 
