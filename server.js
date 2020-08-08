@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 let MONGODB_URI = "mongodb://audijej:Silvia13@ds037758.mlab.com:37758/heroku_xzzcp857"
 
-const PORT = 9000;
+const PORT = process.env.PORT || 9000;
 
 const app = express();
 
