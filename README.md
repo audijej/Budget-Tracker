@@ -19,7 +19,7 @@ This application is a Progressive Web Application that aides a user in maintaini
 
 ## Application
 
--Run application from heroku
+-Run application from [Budget Tracker](https://rocky-sands-12752.herokuapp.com/)
 
 ## Usage
 
